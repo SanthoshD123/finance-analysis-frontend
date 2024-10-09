@@ -1,0 +1,121 @@
+/* Global styling for the entire app */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure body and html cover full height */
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Global Dark Mode Styling */
+body.dark-mode,
+html.dark-mode {
+  background-color: #121212; /* Set global dark background */
+  color: #e0e0e0; /* Ensure text color is light */
+  height: 100%; /* Ensure dark mode covers the full page height */
+}
+
+/* Specific styling for Ant Design layout components */
+.app-layout {
+  min-height: 100vh; /* Ensure the layout covers the entire viewport */
+  background-color: #f0f2f5; /* Default light background */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode for Layout */
+.dark-mode .app-layout {
+  background-color: #121212; /* Dark background for layout */
+}
+
+/* Content styling */
+.app-content {
+  padding: 20px;
+  background-color: #fff; /* Default light background */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode for Content */
+.dark-mode .app-content {
+  background-color: #1e1e1e; /* Dark background for content */
+  color: #e0e0e0;
+}
+
+/* Header styles */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Header */
+.dark-mode .app-header {
+  background-color: #1f1f1f; /* Dark background for header */
+  color: #e0e0e0;
+}
+
+/* Dark mode specific styles for Ant Design components */
+.dark-mode .ant-layout {
+  background-color: #1e1e1e; /* Ensure Ant Design layout is in dark mode */
+}
+
+.dark-mode .ant-layout-header {
+  background-color: #1f1f1f; /* Dark header for layout */
+  color: #e0e0e0;
+}
+
+.dark-mode .ant-layout-content {
+  background-color: #1e1e1e; /* Dark content for layout */
+  color: #e0e0e0;
+}
+
+/* Dark Mode for Ant Design buttons */
+.dark-mode .ant-btn-primary {
+  background-color: #444; /* Dark button */
+  border-color: #444;
+  color: #fff;
+}
+
+.dark-mode .ant-btn-primary:hover {
+  background-color: #666;
+  border-color: #666;
+}
+
+/* Ensure tables and other components use dark mode */
+.dark-mode .ant-table {
+  background-color: #1f1f1f; /* Dark table background */
+  color: #e0e0e0;
+}
+
+.dark-mode .ant-table-thead > tr > th {
+  background-color: #1f1f1f; /* Dark table header */
+}
+
+.dark-mode .ant-table-tbody > tr > td {
+  background-color: #1e1e1e; /* Dark table rows */
+  color: #e0e0e0;
+}
+
+/* Additional elements */
+.dark-mode .top-bar,
+.dark-mode .tabs {
+  background-color: #333333; /* Dark background for top bar and tabs */
+  color: #e0e0e0;
+}

@@ -1,0 +1,57 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f5f7;
+}
+
+.auth-card {
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.auth-card .ant-card-head {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.auth-card .ant-input,
+.auth-card .ant-input-password {
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.auth-card .ant-btn {
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Dark Mode for Login/Register Pages */
+.dark-mode .auth-container {
+  background-color: #121212;
+}
+
+.dark-mode .auth-card {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
+
+.dark-mode .ant-input,
+.dark-mode .ant-input-password {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+.dark-mode .ant-btn {
+  background-color: #444;
+  border-color: #666;
+  color: #e0e0e0;
+}
+
+.dark-mode .ant-btn:hover {
+  background-color: #555;
+  border-color: #777;
+}
